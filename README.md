@@ -5,7 +5,7 @@ Api para sistema User, Challenges, Videos
 ## Requisitos
 
 - Laravel (versión 11.9)
-- MyslSQL (versión 8.3.0)
+- MySQL (versión 8.3.0)
 - Sanctum (versión 4.0)
 - Api Huggingface
 
