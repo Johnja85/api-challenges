@@ -17,6 +17,7 @@ Api para sistema User, Challenges, Videos
    cd tu-repositorio
 
 2. Instala las dependencias
+    ```bash
     composer install
     composer require laravel/sanctum
     php artisan install:api
@@ -32,47 +33,42 @@ Api para sistema User, Challenges, Videos
     - Configura el archivo .env con tus credenciales de base de datos.
 
 5. Generar APP_KEY, es la llave para cada proyecto de Laravel:
+    ```bash
     php artisan key:generate
 
 6. Migraciones
     Ejecutar las migraciones: php artisan migrate
 
 7. Inicio de proyecto:
+    ```bash
     php artisan serve
 
 ## USO
 
-* URL o endpoint: http://api-challenges.test:{PUERTO_LOCAL}
+* URL o endpoint:
+    ```bash 
+    http://api-challenges.test:{PUERTO_LOCAL}
 
 * Para autenticación
-    POS /api/v1/login
-    POS /api/v1/logout
+    - POS /api/v1/login
+    - POS /api/v1/logout
 
 * Para user
-    POS /api/v1/user
-    GET /api/v1/user
-    GET /api/v1/user/{id}
-    PUT /api/v1/user/{id}
+    - POS /api/v1/user
+    - GET /api/v1/user
+    - GET /api/v1/user/{id}
+    - PUT /api/v1/user/{id}
 
 * Para challenges
-    POS /api/v1/challenges
-    GET /api/v1/challenges
-    GET /api/v1/challenges/{id}
-    DELETE /api/v1/challenges/{id}
-    PUT /api/v1/challenges/{id}
+    - POS /api/v1/challenges
+    - GET /api/v1/challenges
+    - GET /api/v1/challenges/{id}
+    - DELETE /api/v1/challenges/{id}
+    - PUT /api/v1/challenges/{id}
 
 * Para videos
-    POS /api/v1/videos
-    GET /api/v1/videos
-    GET /api/v1/videos/{id}
-    DELETE /api/v1/videos/{id}
-    PUT /api/v1/videos/{id}
-
-# Contribuir
-Si deseas contribuir, por favor sigue estos pasos:
-
-Haz un fork del repositorio.
-Crea una rama con tu nueva funcionalidad (git checkout -b feature/nueva-funcionalidad).
-Haz commit de tus cambios (git commit -m 'Añadir nueva funcionalidad').
-Sube tu rama (git push origin feature/nueva-funcionalidad).
-Crea un nuevo Pull Request.
+    - POS /api/v1/videos
+    - GET /api/v1/videos
+    - GET /api/v1/videos/{id}
+    - DELETE /api/v1/videos/{id}
+    - PUT /api/v1/videos/{id}
